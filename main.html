@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="ic.jpg" />
+</head>
+<body>
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+
+    <div class="inp">
+      <input type="text" id="taskip" placeholder="Enter a new task..." />
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <!-- ✅ Task status moved here -->
+    <div class="status">
+      <p>✅ Completed: <span id="completedCount">0</span></p>
+      <p>📋 Not Completed: <span id="notCompletedCount">0</span></p>
+    </div>
+
+    <ul id="list"></ul>
+  </div>
+
+  <script src="javs.js"></script>
+</body>
+</html>
